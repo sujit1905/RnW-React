@@ -1,0 +1,99 @@
+.work-section {
+  background: #343a40;
+  padding: 100px 0;
+}
+
+/* CARD */
+.work-card {
+  position: relative;
+  border-radius: 14px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.work-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.work-card:hover img {
+  transform: scale(1.08);
+}
+
+/* OVERLAY */
+.work-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.work-card:hover .work-overlay {
+  opacity: 1;
+}
+
+.work-overlay h5 {
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+/* BUTTONS */
+.work-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.work-buttons .btn {
+  padding: 6px 16px;
+  border-radius: 20px;
+}
+/* TITLE HEADER (SAME STYLE EVERYWHERE) */
+.section-header {
+  position: relative;
+  margin-bottom: 70px;
+}
+
+/* SMALL TOP TITLE */
+.section-main-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+/* GREEN UNDERLINE */
+.section-main-title::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 2px;
+  background: #20c997;
+}
+
+/* BIG FADED BACKGROUND TEXT */
+.section-bg-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 90px;
+  font-weight: 800;
+  letter-spacing: 4px;
+  color: rgba(255, 255, 255, 0.05);
+  z-index: 1;
+  white-space: nowrap;
+  pointer-events: none;
+}

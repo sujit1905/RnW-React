@@ -1,0 +1,120 @@
+.skills-section {
+  background: #212529;
+  padding: 100px 0;
+  overflow: hidden;
+  height: 70vh;
+}
+
+/* TITLE */
+.section-title {
+  font-weight: 700;
+  position: relative;
+  z-index: 2;
+}
+
+.section-bg {
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 80px;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.05);
+  z-index: 1;
+}
+
+
+
+.skills-track {
+  display: flex;
+  gap: 30px;
+  width: max-content;
+  animation: scroll 30s linear infinite;
+}
+
+.skills-slider:hover .skills-track {
+  animation-play-state: paused;
+}
+
+/* CARD */
+.skill-card {
+  min-width: 160px;
+  height: 140px;
+  background: #343a40;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card img {
+  width: 48px;
+  height: 48px;
+}
+
+.skill-card span {
+  font-size: 14px;
+  color: #20c997;
+  font-weight: 600;
+}
+
+.skill-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* ANIMATION */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+/* TITLE HEADER (SAME AS ABOUT) */
+.section-header {
+  position: relative;
+  margin-bottom: 70px;
+}
+
+/* SMALL TOP TITLE */
+.section-main-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+/* GREEN UNDERLINE */
+.section-main-title::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 2px;
+  background: #20c997;
+}
+
+/* BIG BACKGROUND TEXT */
+.section-bg-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 90px;
+  font-weight: 800;
+  letter-spacing: 18px;
+  color: rgba(255, 255, 255, 0.05);
+  z-index: 1;
+  white-space: nowrap;
+  pointer-events: none;
+}

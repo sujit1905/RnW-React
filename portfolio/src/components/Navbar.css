@@ -1,0 +1,61 @@
+.custom-navbar {
+  background: transparent;
+  padding: 20px 0;
+  transition: background 0.4s ease, padding 0.4s ease;
+}
+
+/* AFTER SCROLL */
+.navbar-scrolled {
+  background: #000;
+  padding: 12px 0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Optional: link hover effect */
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: #20c997;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+/* NAV LINK BASE */
+.nav-item-link {
+  color: #fff !important;
+  position: relative;
+  cursor: pointer;
+  padding: 6px 0;
+}
+
+/* UNDERLINE EFFECT */
+.nav-item-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: #20c997;
+  transition: width 0.3s ease;
+}
+
+/* ACTIVE STATE */
+.nav-item-link.active::after {
+  width: 100%;
+}
+
+/* OPTIONAL: hover underline */
+.nav-item-link:hover::after {
+  width: 100%;
+}

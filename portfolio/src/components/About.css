@@ -1,0 +1,131 @@
+.about-section {
+  background: #343a40;
+  padding: 90px 0;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* TITLE */
+.section-title {
+  display: inline-block;
+  font-weight: 700;
+  position: relative;
+  z-index: 2;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #20c997;
+}
+
+.section-bg {
+ color: red;
+}
+
+/* MIDDLE */
+.about-middle {
+  margin-top: 40px;
+}
+
+.about-middle h3 {
+  margin-bottom: 16px;
+}
+
+.about-middle p {
+  line-height: 1.7;
+  color: #dee2e6;
+}
+
+/* RIGHT INFO (MATCH IMAGE) */
+.about-info {
+  margin-top: 5px;
+}
+
+.info-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #333;
+}
+
+.info-label {
+  font-weight: 600;
+  color: #dee2e6;
+}
+
+.info-value {
+  color: #adb5bd;
+}
+
+.highlight {
+  color: #20c997;
+}
+
+/* STATS */
+.stats {
+  margin-top: 70px;
+}
+
+.stats h2 {
+  font-size: 42px;
+  font-weight: 700;
+  color: #adb5bd;
+}
+
+.stats p {
+  margin-top: 6px;
+  color: #dee2e6;
+}
+
+/* SUBTLE HOVER */
+.stats .col-md-3 {
+  transition: transform 0.3s ease;
+}
+
+.stats .col-md-3:hover {
+  transform: translateY(-6px);
+}
+.section-header {
+  position: relative;
+  margin-bottom: 70px;
+}
+
+/* TOP SMALL TITLE */
+.section-main-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+/* GREEN UNDERLINE */
+.section-main-title::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 2px;
+  background: #20c997;
+}
+
+/* BACKGROUND BIG TEXT */
+.section-bg-title {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 90px;
+  font-weight: 800;
+  letter-spacing: 18px;
+  color: rgba(255, 255, 255, 0.05);
+  z-index: 1;
+  white-space: nowrap;
+  pointer-events: none;
+  margin-top: -10px;
+}
