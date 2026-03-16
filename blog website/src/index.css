@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-50: #f8fafc;
+  --color-primary-100: #f1f5f9;
+  --color-primary-500: #64748b;
+  --color-primary-600: #475569;
+  --color-primary-900: #0f172a;
+  --font-sans: 'Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif';
+}
+
+@layer base {
+  body {
+    @apply bg-white text-gray-900 font-sans;
+  }
+}
