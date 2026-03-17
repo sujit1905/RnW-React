@@ -6,7 +6,7 @@ import { useBlogs } from '../context/BlogContext';
 
 export default function Dashboard() {
   const [activeTab, setActiveTab] = useState('posts');
-  const { blogs } = useBlogs();
+  const { blogs, deleteBlog } = useBlogs();
   const userBlogs = blogs.filter(b => b.author.name === currentUser.name); 
 
   return (
@@ -78,10 +78,10 @@ export default function Dashboard() {
                            </div>
                         </div>
                         <div className="flex items-center gap-3 mt-4 sm:mt-0 opacity-100 sm:opacity-0 group-hover:opacity-100 transition-opacity">
-                           <button className="p-2 text-gray-400 hover:text-blue-600 bg-white rounded-full shadow-sm ring-1 ring-gray-100 hover:ring-blue-100 transition-all" title="Edit">
+                           <Link to={`/edit/${blog.id}`} className="p-2 text-gray-400 hover:text-blue-600 bg-white rounded-full shadow-sm ring-1 ring-gray-100 hover:ring-blue-100 transition-all" title="Edit">
                              <Edit2 className="w-4 h-4" />
-                           </button>
-                           <button className="p-2 text-gray-400 hover:text-red-600 bg-white rounded-full shadow-sm ring-1 ring-gray-100 hover:ring-red-100 transition-all" title="Delete">
+                           </Link>
+                           <button onClick={() => deleteBlog(blog.id)} className="p-2 text-gray-400 hover:text-red-600 bg-white rounded-full shadow-sm ring-1 ring-gray-100 hover:ring-red-100 transition-all" title="Delete">
                              <Trash2 className="w-4 h-4" />
                            </button>
                         </div>

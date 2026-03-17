@@ -4,17 +4,20 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import BlogDetail from './pages/BlogDetail';
 import CreateBlog from './pages/CreateBlog';
+import EditBlog from './pages/EditBlog';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import Dashboard from './pages/Dashboard';
 import Categories from './pages/Categories';
 import About from './pages/About';
 import { BlogProvider } from './context/BlogContext';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
     <BlogProvider>
       <Router>
+        <ScrollToTop />
         <div className="flex flex-col min-h-screen font-sans selection:bg-gray-900 selection:text-white bg-white">
           <Navbar />
           <main className="flex-grow">
@@ -24,6 +27,7 @@ function App() {
               <Route path="/about" element={<About />} />
               <Route path="/blog/:id" element={<BlogDetail />} />
               <Route path="/write" element={<CreateBlog />} />
+              <Route path="/edit/:id" element={<EditBlog />} />
               <Route path="/login" element={<Login />} />
               <Route path="/register" element={<Register />} />
               <Route path="/dashboard" element={<Dashboard />} />

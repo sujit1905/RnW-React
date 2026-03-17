@@ -72,19 +72,7 @@ export default function BlogDetail() {
             {blog.excerpt}
           </p>
           <div className="text-gray-800 leading-relaxed font-serif text-lg space-y-8">
-            <p>
-              {blog.content} Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias molestias cumque reiciendis tempore magnam in! Odit nam, error cum tempora, architecto unde incidunt necessitatibus temporibus veritatis consequuntur voluptatibus, voluptas magni?
-            </p>
-            <h2 className="text-3xl font-bold mt-12 mb-6 font-sans">The Core Concept</h2>
-            <p>
-              Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero.
-            </p>
-            <blockquote className="border-l-4 border-gray-900 pl-6 italic font-medium text-2xl my-10 font-sans">
-              "The most profound technologies are those that disappear. They weave themselves into the fabric of everyday life until they are indistinguishable from it."
-            </blockquote>
-            <p>
-              Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa.
-            </p>
+            <p className="whitespace-pre-line">{blog.content}</p>
           </div>
         </div>
       </header>

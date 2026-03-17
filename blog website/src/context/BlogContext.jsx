@@ -14,17 +14,24 @@ export function BlogProvider({ children }) {
       publishedAt: new Date().toISOString(),
       readTime: Math.max(1, Math.ceil(blog.content.length / 1000)) + " min read",
       author: {
-        name: "John Doe", // Using current user name
-        avatar: "https://i.pravatar.cc/150?u=john"
+        name: "Sujit Mecwan", // Using current user name
+        avatar: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&q=80&w=150"
       }
     };
-
     setBlogs(prevBlogs => [newBlog, ...prevBlogs]);
     return newBlog;
   };
 
+  const updateBlog = (id, updatedBlog) => {
+    setBlogs(prevBlogs => prevBlogs.map(b => b.id === id ? { ...b, ...updatedBlog } : b));
+  };
+
+  const deleteBlog = (id) => {
+    setBlogs(prevBlogs => prevBlogs.filter(b => b.id !== id));
+  };
+
   return (
-    <BlogContext.Provider value={{ blogs, addBlog }}>
+    <BlogContext.Provider value={{ blogs, addBlog, updateBlog, deleteBlog }}>
       {children}
     </BlogContext.Provider>
   );

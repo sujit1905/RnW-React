@@ -116,9 +116,9 @@ export const blogs = [
 ];
 
 export const currentUser = {
-  name: "John Doe",
-  email: "john@example.com",
-  avatar: "https://i.pravatar.cc/150?u=john",
+  name: "Sujit Mecwan",
+  email: "sujit@gmail.com",
+  avatar: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&q=80&w=150",
   role: "Author",
   bio: "Full-stack developer and technical writer passionate about modern web technologies."
 };
