@@ -1,0 +1,31 @@
+[
+  {
+    "id": "lib-admin",
+    "role": "librarian",
+    "name": "Library Admin",
+    "email": "admin@library.com",
+    "password": "admin123"
+  },
+  {
+    "id": "s-ava-studentcom",
+    "role": "student",
+    "name": "Ava Johnson",
+    "email": "ava@student.com",
+    "password": "student123"
+  },
+  {
+    "id": "s-noah-studentcom",
+    "role": "student",
+    "name": "Noah Williams",
+    "email": "noah@student.com",
+    "password": "student123"
+  },
+  {
+    "id": "s-mia-studentcom",
+    "role": "student",
+    "name": "Mia Chen",
+    "email": "mia@student.com",
+    "password": "student123"
+  }
+]
+

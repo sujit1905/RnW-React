@@ -1,0 +1,21 @@
+[
+  {
+    "id": "s-ava",
+    "name": "Ava Johnson",
+    "email": "ava@student.com",
+    "program": "Computer Science"
+  },
+  {
+    "id": "s-noah",
+    "name": "Noah Williams",
+    "email": "noah@student.com",
+    "program": "Information Systems"
+  },
+  {
+    "id": "s-mia",
+    "name": "Mia Chen",
+    "email": "mia@student.com",
+    "program": "Human-Computer Interaction"
+  }
+]
+

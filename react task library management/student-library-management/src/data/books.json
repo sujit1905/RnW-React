@@ -1,0 +1,83 @@
+[
+  {
+    "id": "b-at-hab",
+    "title": "Atomic Habits",
+    "author": "James Clear",
+    "genre": "Self-Help",
+    "year": 2018,
+    "cover": { "emoji": "🧠", "from": "#22c55e", "to": "#3b82f6" }
+  },
+  {
+    "id": "b-prag-dev",
+    "title": "Pragmatic Programmer",
+    "author": "Andrew Hunt",
+    "genre": "Software",
+    "year": 1999,
+    "cover": { "emoji": "💻", "from": "#f97316", "to": "#ef4444" }
+  },
+  {
+    "id": "b-react-guide",
+    "title": "The Road to React",
+    "author": "A. UI Architect",
+    "genre": "Web Development",
+    "year": 2021,
+    "cover": { "emoji": "⚛️", "from": "#a855f7", "to": "#3b82f6" }
+  },
+  {
+    "id": "b-clean-code",
+    "title": "Clean Code",
+    "author": "Robert C. Martin",
+    "genre": "Software",
+    "year": 2008,
+    "cover": { "emoji": "🧼", "from": "#06b6d4", "to": "#8b5cf6" }
+  },
+  {
+    "id": "b-ml-intro",
+    "title": "Machine Learning 101",
+    "author": "S. Data Scientist",
+    "genre": "AI & Data",
+    "year": 2020,
+    "cover": { "emoji": "🤖", "from": "#22c55e", "to": "#14b8a6" }
+  },
+  {
+    "id": "b-ux-principles",
+    "title": "UX Principles That Stick",
+    "author": "N. Interaction Designer",
+    "genre": "Design",
+    "year": 2019,
+    "cover": { "emoji": "🎛️", "from": "#f43f5e", "to": "#a855f7" }
+  },
+  {
+    "id": "b-psych-habits",
+    "title": "The Psychology of Habits",
+    "author": "L. Mindwell",
+    "genre": "Psychology",
+    "year": 2017,
+    "cover": { "emoji": "🧘", "from": "#60a5fa", "to": "#34d399" }
+  },
+  {
+    "id": "b-systems-thinking",
+    "title": "Systems Thinking",
+    "author": "K. Weaver",
+    "genre": "Management",
+    "year": 2016,
+    "cover": { "emoji": "🕸️", "from": "#f59e0b", "to": "#ef4444" }
+  },
+  {
+    "id": "b-creative-coding",
+    "title": "Creative Coding Playbook",
+    "author": "M. Pixelwright",
+    "genre": "Creative Tech",
+    "year": 2022,
+    "cover": { "emoji": "🖌️", "from": "#38bdf8", "to": "#a855f7" }
+  },
+  {
+    "id": "b-db-mastery",
+    "title": "Database Mastery",
+    "author": "R. Query",
+    "genre": "Data",
+    "year": 2015,
+    "cover": { "emoji": "🗄️", "from": "#10b981", "to": "#0ea5e9" }
+  }
+]
+
